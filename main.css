@@ -1,29 +1,95 @@
+html {
+    background-image: url('https://media.istockphoto.com/photos/perfect-wood-planks-background-picture-id523584249?k=6&m=523584249&s=612x612&w=0&h=733mmrl5yJ3wMbiSFiTCRwDq5Mth-sUeDcRVAn8Qakw=');
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-image: url('https://media.istockphoto.com/photos/perfect-wood-planks-background-picture-id523584249?k=6&m=523584249&s=612x612&w=0&h=733mmrl5yJ3wMbiSFiTCRwDq5Mth-sUeDcRVAn8Qakw=');
+    z-index: 5;
+    top: 0;
+    font-size: 40px;
+    left: 0;
+}
+
 h1 {
-    font-size: 72px;
+    color: #a2cc8c;
+}
+
+h2 {
+    color: #a2cc8c;
+    font-size: 50px;
+}
+
+h3 {
+    color: #a2cc8c;
+    font-size: 24px;
+    clear: left;
+}
+
+.items {
+    padding-bottom: 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+.items_list {
+    color: white;
 }
 
 .sidebar {
-    max-width: 30%;
-    max-height: 100%;
-    position: relative;
+    max-width: 250px;
+    width: 20%;
+    min-height: 100%;
+    position: fixed;
     float: left;
-    background-color: lightgray;
-    column-width: 100%
+    z-index: 5;
+    margin-left: 0;
+    left: 0;
 }
 
 .main {
     position: relative;
-    margin-left: auto;
-}
-
-head {
-    background-color: blue;
-}
-
-footer {
-    background-color: darkgrey;
+    margin-left: 25%;
+    padding-left: 5%;
+    color: white;
+    margin-top: 225px;
+    max-width: 800px;
+    
 }
 
 body {
-    background-color: coral;
+    padding-left: 0;
+    margin-top: 200px;
 }
+
+p {
+    margin-top: 5;
+}
+
+.button {
+    display: block;
+    background-color: #ffffff75;
+    color: #a2cc8c;
+    border: 1px solid black;
+    text-align: center;
+}
+
+img {
+    width: 225px;
+    height: 225px;
+    align-self: right;
+    margin: 10px;
+}
+
+li {
+    float: left;
+    margin: 10px;
+}
+
+ul {
+    clear: left;
+ }
