@@ -2,11 +2,13 @@ Block Model Layout
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    /* min-width: 320px;
+    min-height: auto; */
   }
   *, *:before, *:after {
     box-sizing: inherit;
     margin: 0; 
-    font-size: 10px;
+    font-size: 15px;
   }
 
 body {
@@ -15,24 +17,11 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
+    min-width: 320px;
+    min-height: auto;
     background-color: #F2F2F2;
 }
 
-@media screen and (min-width: 320px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1024px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-
-}
 
 header {
     display: flex;
@@ -73,7 +62,7 @@ button {
 }
 
 #glass {
-    background-image:url('images/facebook/glass.png');
+    background-image: url('images/facebook/glass.png');
     border: 0;
 }
 
@@ -90,15 +79,113 @@ button {
     display: none;
 }
 
-.postbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+.statusbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #newsfeed {
     display: inline;
     text-align: center;
-    margin: 2px 2px;
+    margin: 1px;
+}
+
+#post {
+    background-color: white;
+}
+
+.statusbar {
+    border: 1px solid #e8e9eb;
+}
+
+.postbar {
+    width: 106px;
+    height: 37px;
+    background-color: white;
+}
+
+#postphoto {
+    background-image: url('images/facebook/photo.png');
+}
+
+#checkin {
+    background-image: url('images/facebook/check_in.png');
+}
+
+#more {
+    background-image: url('images/facebook/more.png');
+}
+
+#postentry {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /* justify-content: center; */ 
+    background-color: white;
+    margin: 1% 1%;
+}
+
+.profile_photo_button {
+    width: 50px;
+    height: 50px;
+    float: left; 
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.profile_photo {
+    background-image: url('images/facebook/profile.png');
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#entry {
+    clear: right;
+}
+
+#editors {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    background-color: white;
+    /* border: 1px solid #e8e9eb; */
+    margin: 1% 1%;
+}
+
+.edit {
+    border: 1px solid #e8e9eb;
+}
+
+#postbutton {
+    align-self: center;
+}
+
+#randompost {
+    width: 100%;
+    height: 294px;
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+    #ads {
+        display: inline-block;
+    }
+    #button_links {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
