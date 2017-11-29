@@ -82,6 +82,7 @@ button {
 .statusbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid #e8e9eb;
 }
 
 #newsfeed {
@@ -92,10 +93,6 @@ button {
 
 #post {
     background-color: white;
-}
-
-.statusbar {
-    border: 1px solid #e8e9eb;
 }
 
 .postbar {
